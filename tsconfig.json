@@ -1,0 +1,28 @@
+{
+    /** 
+     * This file is extended others - this should be the one-size-fits-all config, 
+     * others should extend/overwrite to suit their needs (build, testing, etc).
+    **/
+    "include": ["src/**/*", "test/**/*"],
+    "compilerOptions": {
+    //   "typeRoots": ["src/types", "./node_modules/@types"],
+      "types": ["node"],
+      "outDir": "./dist",
+      "target": "es6",
+      "lib": ["ESNext"],
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "strict": true,
+      "skipLibCheck": true,
+      "noImplicitAny": true,
+      "preserveWatchOutput": true,
+  
+      "allowJs": true
+    },
+    "ts-node": {
+      "files": true
+    }
+  }
+  
